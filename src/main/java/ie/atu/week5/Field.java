@@ -4,6 +4,16 @@ public class Field {
     private double length;
     private double width;
 
+    public Field() {
+        this.length = 0;
+        this.width = 0;
+    }
+
+    public Field(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
     public double getLength() {
         return length;
     }
