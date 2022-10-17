@@ -13,7 +13,7 @@ public class Shape {
         // First object is called shapeField
         Field shapeField = new Field();
         shapeField.setLength(length);
-        System.out.println("You entered: " + length);
+        System.out.println("You entered: " + shapeField.getLength());
 
         System.out.println("Please enter the width of the field");
         double width = input.nextDouble();
@@ -31,5 +31,9 @@ public class Shape {
         double width2 = input.nextDouble();
         shapeField2.setWidth(width2);
         System.out.println("You entered: " + shapeField2.getWidth());
+
+        Field shapeField3 = new Field(70,30);
+        System.out.println("You entered for length: " + shapeField3.getLength());
+        System.out.println("You entered for width: " + shapeField3.getWidth());
     }
 }
